@@ -79,9 +79,9 @@ export default function GameCard({
           >
             #{formattedNumber}
           </span>
-          <span className="text-[11px] font-medium text-slate-400 bg-white/5 px-2 py-0.5 rounded-full border border-white/5">
+          {/* <span className="text-[11px] font-medium text-slate-400 bg-white/5 px-2 py-0.5 rounded-full border border-white/5">
             {game.category || 'Jogo'}
-          </span>
+          </span> */}
         </div>
 
         {/* Quick mobile QR button */}
@@ -97,16 +97,16 @@ export default function GameCard({
       {/* Student & Game Info */}
       <div className="mb-4">
         {/* Student Name */}
-        <div className="flex items-center gap-2 mb-1.5">
+        {/* <div className="flex items-center gap-2 mb-1.5">
           <div
             className={`w-2 h-2 rounded-full ${
               isCyan ? 'bg-[#00dfb6]' : 'bg-[#ff007f]'
             }`}
           />
-          <h4 className="text-sm font-semibold text-slate-300 tracking-wide uppercase">
-            {game.studentName}
-          </h4>
-        </div>
+           <h4 className="text-sm font-semibold text-slate-300 tracking-wide uppercase">
+            {game.gameTitle}
+          </h4> 
+        </div> */}
 
         {/* Game Title with Icon */}
         <div className="flex items-start gap-2.5 my-1">
@@ -121,11 +121,11 @@ export default function GameCard({
           </div>
           <div>
             <h3 className="text-lg font-bold text-white tracking-tight leading-snug font-['Outfit'] group-hover:text-white transition-colors">
-              {game.gameTitle}
+              {game.studentName}
             </h3>
-            <p className="text-xs text-slate-400 line-clamp-2 mt-1 leading-relaxed">
+            {/* <p className="text-xs text-slate-400 line-clamp-2 mt-1 leading-relaxed">
               {game.description || 'Clique no botão abaixo para carregar e jogar a fase criada.'}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="flex items-center gap-1.5 text-xs text-slate-400">
           <span>Desenvolvido com</span>
           <Heart className="w-3.5 h-3.5 text-[#ff007f] fill-[#ff007f]" />
-          <span>para o dia do evento</span>
+          <span>para a Future Fest 26´</span>
         </div>
 
         {/* Right Action: Scroll Top */}

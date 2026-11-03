@@ -64,7 +64,7 @@ export default function Header({ onOpenGuide }) {
 
         {/* Subtitle / Intro text */}
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-3 font-['Outfit'] leading-tight">
-          Feira de Jogos Digitais
+          Jogos Digitais
         </h1>
 
         <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6 font-normal">
@@ -82,7 +82,7 @@ export default function Header({ onOpenGuide }) {
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800">
             <Gamepad2 className="w-3.5 h-3.5 text-[#ff007f]" />
-            <span>40 Jogos Interativos</span>
+            <span>35 Jogos Interativos</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />

@@ -1,11 +1,11 @@
-import { Search, X, Dices, Filter } from 'lucide-react';
+import { Search, X, Dices /*Filter*/ } from 'lucide-react';
 
 export default function ControlsBar({
   searchQuery,
   setSearchQuery,
-  selectedCategory,
-  setSelectedCategory,
-  categories,
+  // selectedCategory,
+  // setSelectedCategory,
+  // categories,
   onPickRandom,
   totalGames,
   filteredCount,
@@ -24,7 +24,7 @@ export default function ControlsBar({
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Buscar por nome do aluno ou nome do jogo..."
+            placeholder="Buscar por nome do aluno"
             className={`w-full pl-10 pr-10 py-2.5 rounded-xl bg-slate-900/90 text-sm text-white placeholder-slate-500 border border-white/10 outline-none transition-all ${borderFocusClass}`}
           />
           {searchQuery && (
@@ -38,7 +38,7 @@ export default function ControlsBar({
         </div>
 
         {/* Categories Bar */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+        {/* <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
           <Filter className="w-4 h-4 text-slate-500 shrink-0 ml-1 hidden sm:block" />
           {categories.map((cat) => {
             const isSelected = selectedCategory === cat;
@@ -58,7 +58,7 @@ export default function ControlsBar({
               </button>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Action Button: Random Game */}
         <div className="flex items-center justify-between md:justify-end gap-3 shrink-0 pt-2 md:pt-0 border-t md:border-t-0 border-white/5">
